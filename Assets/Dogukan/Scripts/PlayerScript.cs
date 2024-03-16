@@ -34,18 +34,27 @@ public class PlayerScript : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //Debug.Log("i touched smth");
+        Debug.Log(collision.gameObject);
 
         if (collision.CompareTag("Civilian"))
         {
-            Debug.Log("i touched a civilian");
+            //Debug.Log("i touched a civilian");
             rescueCivilian();
         }
+
+        if(collision.CompareTag("NextLevelPortal"))
+        {
+            StartCoroutine(gameManagerScript.loadNextLevel(3.0f));
+        }
+
     }
 
     private void rescueCivilian()
     {
-        Debug.Log("i rescued a civilian");
+        //Debug.Log("i rescued a civilian");
+
         //Animate player
+
         gameManagerScript.increaseRescuedCivilianCount();
     }
 

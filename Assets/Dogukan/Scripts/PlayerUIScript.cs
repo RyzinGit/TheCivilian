@@ -16,7 +16,6 @@ public class PlayerUIScript : MonoBehaviour
     public Button buttonMainMenu;
 
     //skill buttons
-
     public Button buttonDash;
     public Button buttonHeal;
     public Button buttonJump;
@@ -80,7 +79,7 @@ public class PlayerUIScript : MonoBehaviour
         //    _audioManager.gameObject.SetActive(!isSoundActive);
         //    _audioManager.StartMusicAfterSecs(0);
         //}
-        
+
         _audioManager.musicSource.mute = !_audioManager.musicSource.mute;
         _audioManager.sfxSource.mute = !_audioManager.sfxSource.mute;
 
