@@ -143,6 +143,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 410921575613505657}
     m_Modifications:
+    - target: {fileID: 2331395534315536324, guid: 5978e6d00fe2cea47973a4427838ad89, type: 3}
+      propertyPath: _audioManager
+      value: 
+      objectReference: {fileID: 3726870122625868219, guid: e4ca5c2f8b6e336489470d2ac1a6a26b, type: 3}
+    - target: {fileID: 2331395534315536324, guid: 5978e6d00fe2cea47973a4427838ad89, type: 3}
+      propertyPath: _mainMenuScript
+      value: 
+      objectReference: {fileID: 1563341662573019532, guid: 7185df49e415e474ea8006dd14086577, type: 3}
+    - target: {fileID: 2331395534315536324, guid: 5978e6d00fe2cea47973a4427838ad89, type: 3}
+      propertyPath: _deathMenuScript
+      value: 
+      objectReference: {fileID: 4103057314665232499, guid: 276bbd7581da7fc49b271362e7b6858a, type: 3}
     - target: {fileID: 4235822757663931848, guid: 5978e6d00fe2cea47973a4427838ad89, type: 3}
       propertyPath: m_Pivot.x
       value: 0
