@@ -47,6 +47,8 @@ public class AudioManager : MonoBehaviour
     }
     public void PlaySFXAtPosition(string name, Vector3 position)
     {
+        if (sfxSource.mute)
+            return;
         foreach (var audio in sfxAudios)
         {
             if (audio.name == name)

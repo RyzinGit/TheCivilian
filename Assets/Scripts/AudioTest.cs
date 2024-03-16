@@ -8,6 +8,7 @@ public class AudioTest : MonoBehaviour
     void Start()
     {
         //AudioManager.instance.PlaySFX("CheckPoint");
+        //AudioManager.instance.sfxSource.mute = true;
         AudioManager.instance.StartMusicAfterSecs(3);
         AudioManager.instance.PlaySFXAtPosition("Explosion", new Vector3(12,6,0));
         StartCoroutine(InTimeTestCor(5));
