@@ -52,6 +52,7 @@ public class AudioManager : MonoBehaviour
             if (audio.name == name)
             {   
                 AudioSource.PlayClipAtPoint(audio.clip, position);
+                //this messes with muting option as muting only effects source but this creates a new independent audio clip object -d
                 return;
             }
         }
@@ -66,7 +67,7 @@ public class AudioManager : MonoBehaviour
     }
     public void StartMusicAfterSecs(float time)
     {
-        StartCoroutine(StartMusicAfterSecsCor(time));
+        StartCoroutine(StartMusicAfterSecsCor(time)); //would this cause crash if we disable audiomanager? unity gives me error -dogukan
     }
 
 }
