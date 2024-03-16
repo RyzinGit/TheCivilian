@@ -7,8 +7,9 @@ public class AudioTest : MonoBehaviour
     //how to use AudioManager guide
     void Start()
     {
-        AudioManager.instance.PlaySFX("CheckPoint");
+        //AudioManager.instance.PlaySFX("CheckPoint");
         AudioManager.instance.StartMusicAfterSecs(3);
+        AudioManager.instance.PlaySFXAtPosition("Explosion", new Vector3(12,6,0));
         StartCoroutine(InTimeTestCor(5));
     }
     private IEnumerator InTimeTestCor(float time)

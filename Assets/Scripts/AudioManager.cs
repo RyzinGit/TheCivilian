@@ -45,6 +45,17 @@ public class AudioManager : MonoBehaviour
             }
         }
     }
+    public void PlaySFXAtPosition(string name, Vector3 position)
+    {
+        foreach (var audio in sfxAudios)
+        {
+            if (audio.name == name)
+            {   
+                AudioSource.PlayClipAtPoint(audio.clip, position);
+                return;
+            }
+        }
+    }
     //music can stop when scene changing for hear sfx clearly, so we can start music after sfx finished
     //object which call coroutine, can be destroyed when changing scene or something
     //because of that coroutine have to start on this object, or other DontDestroyOnLoad object
