@@ -36,6 +36,11 @@ public class PlayerScript : MonoBehaviour
         //Debug.Log("i touched smth");
         Debug.Log(collision.gameObject);
 
+        if(collision.CompareTag("Bullet"))
+        {
+            gameManagerScript.lowerHealthPoints();
+        }
+
         if (collision.CompareTag("Civilian"))
         {
             //Debug.Log("i touched a civilian");
@@ -58,6 +63,12 @@ public class PlayerScript : MonoBehaviour
         gameManagerScript.increaseRescuedCivilianCount();
     }
 
+    public void killPlayer()
+    {
+        //death animation
 
+        //stop movement
+
+    }
 
 }

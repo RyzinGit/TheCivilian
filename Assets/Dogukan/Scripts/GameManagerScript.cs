@@ -19,7 +19,7 @@ public class GameManagerScript : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(gameObject);
-        healthPoints = 0;
+        healthPoints = 10;
         levelEndCivCount = 30;
     }
 
@@ -28,6 +28,8 @@ public class GameManagerScript : MonoBehaviour
     {
         playerUIScript.updateHealthUIText(healthPoints);
         playerUIScript.updateRescuedCivUIText(rescuedCivCount);
+
+        checkPlayerHealth();
     }
 
     // Update is called once per frame
@@ -60,6 +62,15 @@ public class GameManagerScript : MonoBehaviour
         playerUIScript.updateHealthUIText(healthPoints);
     }
 
+    private void checkPlayerHealth()
+    {
+        if ((healthPoints <= 0))
+        {
+            _player.killPlayer();
+            startGameEnder();
+        }
+    }
+
     public IEnumerator loadNextLevel(float seconds) //wait seconds for gate animation to end
     {
         Debug.Log("im in");
@@ -83,7 +94,18 @@ public class GameManagerScript : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
+    private void startGameEnder()
+    {
+        //GameOver sound
+        AudioManager.instance.PlaySFXAtPosition("Death",_player.transform.position);
 
+        //GameOver UI shows 
+        playerUIScript.activateDeathMenu();
+
+        Time.timeScale = 0.0f;
+        //possibly, player still getting damage after death. death menu may trigger again and again. should we stop time, can we still use menu? ?
+
+    }
 
 
 }

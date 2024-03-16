@@ -34,7 +34,7 @@ public class MainMenuScript : MonoBehaviour
 
     private void buttonStartClicked()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(3); //0 main menu, 1 level1
     }
     private void buttonResumeClicked()
     {
@@ -52,6 +52,7 @@ public class MainMenuScript : MonoBehaviour
         else
         {
             buttonResume.enabled = false;
+            //buttonResume.gameObject.SetActive(false);
         }
     }
 }

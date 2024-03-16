@@ -21,6 +21,7 @@ public class PlayerUIScript : MonoBehaviour
     public Button buttonJump;
 
     [SerializeField] MainMenuScript _mainMenuScript;
+    [SerializeField] DeathMenuScript _deathMenuScript;
 
     [SerializeField] AudioManager _audioManager;
 
@@ -108,7 +109,10 @@ public class PlayerUIScript : MonoBehaviour
         Debug.Log("i can jump higher");
     }
 
-
+    public void activateDeathMenu()
+    {
+        _deathMenuScript.gameObject.SetActive(true);
+    }
 
 
 }
