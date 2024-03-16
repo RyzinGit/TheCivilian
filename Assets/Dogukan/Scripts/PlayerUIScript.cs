@@ -41,7 +41,7 @@ public class PlayerUIScript : MonoBehaviour
 
         //_mainMenuScript = GameObject.Find("MainMenuCanvas").GetComponent<MainMenuScript>();
 
-        _audioManager = GameObject.Find("AudioManagerTest").GetComponent<AudioManager>();
+        //_audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
 
         //if(_audioManager = GameObject.Find("AudioManagerTest").GetComponent<AudioManager>())
         //{

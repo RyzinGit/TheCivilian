@@ -42,7 +42,7 @@ public class GameManagerScript : MonoBehaviour
         //AudioManager.instance.PlaySFXAtPosition("Efek2Collect_", _player.transform.position);
         //_audioManager.PlaySFXAtPosition("Efek1Hit_", _player.transform.position);
         //_audioManager.PlaySFXAtPosition("Explosion", _player.transform.position);
-        AudioManager.instance.PlaySFXAtPosition("Explosion", _player.transform.position);
+        AudioManager.instance.PlaySFXAtPosition("Rescued", _player.transform.position);
 
         Debug.Log("a civilian was rescued ");
 

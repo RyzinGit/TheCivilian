@@ -5584,7 +5584,31 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2437826130402165399, guid: e4ca5c2f8b6e336489470d2ac1a6a26b, type: 3}
       propertyPath: m_Name
-      value: AudioManagerTest
+      value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 3726870122625868219, guid: e4ca5c2f8b6e336489470d2ac1a6a26b, type: 3}
+      propertyPath: sfxAudios.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3726870122625868219, guid: e4ca5c2f8b6e336489470d2ac1a6a26b, type: 3}
+      propertyPath: musicAudios.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3726870122625868219, guid: e4ca5c2f8b6e336489470d2ac1a6a26b, type: 3}
+      propertyPath: sfxAudios.Array.data[2].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 073b1ea4dec92e941a006380881dd5a4, type: 3}
+    - target: {fileID: 3726870122625868219, guid: e4ca5c2f8b6e336489470d2ac1a6a26b, type: 3}
+      propertyPath: sfxAudios.Array.data[2].name
+      value: Rescued
+      objectReference: {fileID: 0}
+    - target: {fileID: 3726870122625868219, guid: e4ca5c2f8b6e336489470d2ac1a6a26b, type: 3}
+      propertyPath: musicAudios.Array.data[2].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2b82c69f744ca7a41a6dadea7f7e2bdd, type: 3}
+    - target: {fileID: 3726870122625868219, guid: e4ca5c2f8b6e336489470d2ac1a6a26b, type: 3}
+      propertyPath: musicAudios.Array.data[2].name
+      value: LoopMain
       objectReference: {fileID: 0}
     - target: {fileID: 7441248840868757639, guid: e4ca5c2f8b6e336489470d2ac1a6a26b, type: 3}
       propertyPath: m_LocalPosition.x
