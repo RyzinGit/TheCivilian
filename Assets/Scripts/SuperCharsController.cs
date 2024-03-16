@@ -22,8 +22,15 @@ public class SuperCharsController : MonoBehaviour
     public bool addFightSequenceTwo;
     public bool addFightSequenceTree;
     public bool addFightSequenceFour;
+
+    //ASSETS, assets looks :(
+
+
+    //For calling assets animations
+    public static event Action AttackAnim;
     private void Awake()
     {
+
         heroLocalPosition = hero.transform.localPosition;
         villainLocalPosition = villain.transform.localPosition;
 
@@ -43,6 +50,8 @@ public class SuperCharsController : MonoBehaviour
     //Instantiate projectile and spread
     public void BulletSpread()
     {
+        
+        AttackAnim?.Invoke();
         Debug.Log("FİREE");
         AudioManager.instance.PlaySFXAtPosition("Explosion", hero.transform.position);
     }

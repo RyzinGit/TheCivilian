@@ -25,7 +25,10 @@ public class HeroKnight : MonoBehaviour {
     private float               m_delayToIdle = 0.0f;
     private float               m_rollDuration = 8.0f / 14.0f;
     private float               m_rollCurrentTime;
-
+    private void Awake()
+    {
+        SuperCharsController.AttackAnim += HeroAttack;
+    }
 
     // Use this for initialization
     void Start ()
@@ -191,5 +194,14 @@ public class HeroKnight : MonoBehaviour {
             // Turn arrow in correct direction
             dust.transform.localScale = new Vector3(m_facingDirection, 1, 1);
         }
+    }
+    /// <summary>
+    /// The Civilian
+    /// i am using asset animations for my usage
+    /// </summary>
+    public void HeroAttack()
+    {
+        m_animator.SetTrigger("Attack" + Random.Range(1,3));
+        Debug.Log(Random.Range(1, 4));
     }
 }
