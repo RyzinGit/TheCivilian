@@ -31,6 +31,8 @@ public class SuperCharsController : MonoBehaviour
             fightSequences.Add(HeroFightSequenceOne);
         if(addFightSequenceTwo)
             fightSequences.Add(HeroFightSequenceTwo);
+        if (addFightSequenceTree)
+            fightSequences.Add(HeroFightSequenceThird);
         //test
         MakeRandomFight();
     }
@@ -66,6 +68,7 @@ public class SuperCharsController : MonoBehaviour
     //1st
     public void HeroFightSequenceOne()
     {
+        isFighting = true;
         LeanTween.moveLocal(hero, villainLocalPosition - offset, fightTime).setEase(LeanTweenType.easeInOutSine)
             .setOnComplete(() => { 
                 BulletSpread();
@@ -79,13 +82,14 @@ public class SuperCharsController : MonoBehaviour
             .setOnComplete(() => {
                 BulletSpread();
                 LeanTween.moveLocal(villain, villainLocalPosition, fightTime).setEase(LeanTweenType.easeInOutSine)
-                .setOnComplete(() => { EndFight(); MakeRandomFight(); }); 
-                //delete make random fight in .setOnComplete to stop endless fight
+                .setOnComplete(() => { EndFight(); MakeRandomFight(); });
+                //delete MakeRandomFight func in .setOnComplete to stop endless fight
             });
     }
     //2nd
     public void HeroFightSequenceTwo()
     {
+        isFighting = true;
         LeanTween.moveLocal(hero, villainLocalPosition - offset, fightTime).setEase(LeanTweenType.easeInElastic)
             .setOnComplete(() => {
                 BulletSpread();
@@ -103,6 +107,29 @@ public class SuperCharsController : MonoBehaviour
             });
     }
     //3rd...
-    
-    
+    public void HeroFightSequenceThird()
+    {
+        isFighting = true;
+        LeanTween.moveLocal(hero, (heroLocalPosition + villainLocalPosition) /2 - offset /2, fightTime).setEase(LeanTweenType.easeInElastic)
+            .setOnComplete(() => {
+                BulletSpread();
+                LeanTween.moveLocal(hero, heroLocalPosition, fightTime).setEase(LeanTweenType.easeInOutSine)
+                .setOnComplete(() => { EndFight(); MakeRandomFight(); });
+            });
+        LeanTween.moveLocal(villain, (heroLocalPosition + villainLocalPosition) /2 + offset /2, fightTime).setEase(LeanTweenType.easeInElastic)
+            .setOnComplete(() => {
+                LeanTween.moveLocal(villain, villainLocalPosition, fightTime).setEase(LeanTweenType.easeInOutSine);
+            });
+
+    }
+    //public void VillainFightSequenceThird()
+    //{
+    //    LeanTween.moveLocal(villain, heroLocalPosition + offset, fightTime).setEase(LeanTweenType.easeInElastic)
+    //        .setOnComplete(() => {
+    //            BulletSpread();
+    //            LeanTween.moveLocal(villain, villainLocalPosition, fightTime).setEase(LeanTweenType.easeInOutSine)
+    //            .setOnComplete(() => { EndFight(); MakeRandomFight(); });
+    //        });
+    //}
+
 }

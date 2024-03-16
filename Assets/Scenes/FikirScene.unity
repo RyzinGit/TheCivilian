@@ -5828,6 +5828,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Supers
       objectReference: {fileID: 0}
+    - target: {fileID: 7683427151585078048, guid: 9046fbcd646238342af121e03fc44e82, type: 3}
+      propertyPath: addFightSequenceOne
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7683427151585078048, guid: 9046fbcd646238342af121e03fc44e82, type: 3}
+      propertyPath: addFightSequenceTwo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7683427151585078048, guid: 9046fbcd646238342af121e03fc44e82, type: 3}
+      propertyPath: addFightSequenceTree
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
