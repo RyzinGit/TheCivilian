@@ -54,7 +54,6 @@ public class AudioManager : MonoBehaviour
             if (audio.name == name)
             {   
                 AudioSource.PlayClipAtPoint(audio.clip, position);
-                //this messes with muting option as muting only effects source but this creates a new independent audio clip object -d
                 return;
             }
         }
