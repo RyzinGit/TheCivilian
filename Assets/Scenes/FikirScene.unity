@@ -203,7 +203,7 @@ GameObject:
   - component: {fileID: 37544133}
   - component: {fileID: 37544132}
   - component: {fileID: 37544131}
-  m_Layer: 3
+  m_Layer: 4
   m_Name: buttonStartGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -321,7 +321,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 153775920}
-  m_Layer: 6
+  m_Layer: 25
   m_Name: GroundSegment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -825,7 +825,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 366145891}
-  m_Layer: 6
+  m_Layer: 25
   m_Name: SkySegment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -862,7 +862,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 397792674}
-  m_Layer: 6
+  m_Layer: 25
   m_Name: WithSegments
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -902,7 +902,7 @@ GameObject:
   - component: {fileID: 422367606}
   - component: {fileID: 422367608}
   - component: {fileID: 422367607}
-  m_Layer: 3
+  m_Layer: 4
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1038,7 +1038,7 @@ GameObject:
   - component: {fileID: 476306184}
   - component: {fileID: 476306183}
   - component: {fileID: 476306182}
-  m_Layer: 3
+  m_Layer: 4
   m_Name: MainMenuCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1155,7 +1155,7 @@ GameObject:
   - component: {fileID: 507324414}
   - component: {fileID: 507324416}
   - component: {fileID: 507324415}
-  m_Layer: 6
+  m_Layer: 25
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1290,7 +1290,7 @@ GameObject:
   - component: {fileID: 566724780}
   - component: {fileID: 566724779}
   - component: {fileID: 566724778}
-  m_Layer: 6
+  m_Layer: 25
   m_Name: buttonSound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1411,7 +1411,7 @@ GameObject:
   - component: {fileID: 583817350}
   - component: {fileID: 583817349}
   - component: {fileID: 583817348}
-  m_Layer: 6
+  m_Layer: 25
   m_Name: buttonMainMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1532,7 +1532,7 @@ GameObject:
   - component: {fileID: 681805992}
   - component: {fileID: 681805991}
   - component: {fileID: 681805990}
-  m_Layer: 6
+  m_Layer: 25
   m_Name: buttonJump
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1652,7 +1652,7 @@ GameObject:
   - component: {fileID: 695118982}
   - component: {fileID: 695118984}
   - component: {fileID: 695118983}
-  m_Layer: 3
+  m_Layer: 4
   m_Name: imageBanner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1831,7 +1831,7 @@ GameObject:
   - component: {fileID: 877773302}
   - component: {fileID: 877773304}
   - component: {fileID: 877773303}
-  m_Layer: 3
+  m_Layer: 4
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2027,7 +2027,7 @@ GameObject:
   - component: {fileID: 944606514}
   - component: {fileID: 944606516}
   - component: {fileID: 944606515}
-  m_Layer: 6
+  m_Layer: 25
   m_Name: textButtonSound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2349,7 +2349,7 @@ GameObject:
   - component: {fileID: 1061993188}
   - component: {fileID: 1061993187}
   - component: {fileID: 1061993186}
-  m_Layer: 6
+  m_Layer: 25
   m_Name: buttonHeal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2470,7 +2470,7 @@ GameObject:
   - component: {fileID: 1135329575}
   - component: {fileID: 1135329574}
   - component: {fileID: 1135329573}
-  m_Layer: 3
+  m_Layer: 4
   m_Name: buttonQuitGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2592,7 +2592,7 @@ GameObject:
   - component: {fileID: 1160881488}
   - component: {fileID: 1160881487}
   - component: {fileID: 1160881490}
-  m_Layer: 6
+  m_Layer: 25
   m_Name: PlayerCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2804,7 +2804,7 @@ GameObject:
   - component: {fileID: 1171074876}
   - component: {fileID: 1171074878}
   - component: {fileID: 1171074877}
-  m_Layer: 6
+  m_Layer: 25
   m_Name: rescuedCivCounterBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2878,7 +2878,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1190691755}
-  m_Layer: 6
+  m_Layer: 25
   m_Name: HorizonSegment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2916,7 +2916,7 @@ GameObject:
   - component: {fileID: 1211719740}
   - component: {fileID: 1211719742}
   - component: {fileID: 1211719741}
-  m_Layer: 6
+  m_Layer: 25
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3048,7 +3048,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1215517887}
-  m_Layer: 6
+  m_Layer: 25
   m_Name: HelpedCivilsCounter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3148,7 +3148,7 @@ GameObject:
   - component: {fileID: 1312899070}
   - component: {fileID: 1312899072}
   - component: {fileID: 1312899071}
-  m_Layer: 3
+  m_Layer: 4
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3417,7 +3417,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1339796642}
-  m_Layer: 6
+  m_Layer: 25
   m_Name: LifeCounter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3517,7 +3517,7 @@ GameObject:
   - component: {fileID: 1623430115}
   - component: {fileID: 1623430117}
   - component: {fileID: 1623430116}
-  m_Layer: 6
+  m_Layer: 25
   m_Name: textMainMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3756,7 +3756,7 @@ GameObject:
   - component: {fileID: 1646145709}
   - component: {fileID: 1646145711}
   - component: {fileID: 1646145710}
-  m_Layer: 6
+  m_Layer: 25
   m_Name: healthCountTMP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4137,7 +4137,7 @@ GameObject:
   - component: {fileID: 1791380643}
   - component: {fileID: 1791380645}
   - component: {fileID: 1791380644}
-  m_Layer: 3
+  m_Layer: 4
   m_Name: MainMenuBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4214,7 +4214,7 @@ GameObject:
   - component: {fileID: 1798644282}
   - component: {fileID: 1798644281}
   - component: {fileID: 1798644280}
-  m_Layer: 3
+  m_Layer: 4
   m_Name: buttonResumeGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4334,7 +4334,7 @@ GameObject:
   - component: {fileID: 1800118810}
   - component: {fileID: 1800118812}
   - component: {fileID: 1800118811}
-  m_Layer: 3
+  m_Layer: 4
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4468,7 +4468,7 @@ GameObject:
   - component: {fileID: 1855438979}
   - component: {fileID: 1855438981}
   - component: {fileID: 1855438980}
-  m_Layer: 3
+  m_Layer: 4
   m_Name: ButtonsPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4592,7 +4592,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1882985459}
-  m_Layer: 6
+  m_Layer: 25
   m_Name: SkillButtons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4632,7 +4632,7 @@ GameObject:
   - component: {fileID: 1910416322}
   - component: {fileID: 1910416324}
   - component: {fileID: 1910416323}
-  m_Layer: 6
+  m_Layer: 25
   m_Name: healthCounterBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4832,7 +4832,7 @@ GameObject:
   - component: {fileID: 2071877870}
   - component: {fileID: 2071877872}
   - component: {fileID: 2071877871}
-  m_Layer: 6
+  m_Layer: 25
   m_Name: rescuedCivCountTMP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5074,7 +5074,7 @@ GameObject:
   - component: {fileID: 2087401268}
   - component: {fileID: 2087401267}
   - component: {fileID: 2087401266}
-  m_Layer: 6
+  m_Layer: 25
   m_Name: buttonDash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5194,7 +5194,7 @@ GameObject:
   - component: {fileID: 2090731712}
   - component: {fileID: 2090731714}
   - component: {fileID: 2090731713}
-  m_Layer: 6
+  m_Layer: 25
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5326,7 +5326,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2139207958}
-  m_Layer: 6
+  m_Layer: 25
   m_Name: OptionButtons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
