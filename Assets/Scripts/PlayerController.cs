@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
 
@@ -15,11 +16,23 @@ public class PlayerController : MonoBehaviour {
 
     [SerializeField] GameManagerScript gameManagerScript;
 
+    private void Awake()
+    {
+        
+    }
+
+
     void Start () {
 		rb = GetComponent<Rigidbody2D> ();
 		anim = GetComponent<Animator> ();
 		localScale = transform.localScale;
-	}
+
+        if (gameManagerScript == null)
+        {
+            gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
+        }
+
+    }
 	
 	void Update () {		
 
@@ -107,7 +120,7 @@ public class PlayerController : MonoBehaviour {
         if(col.gameObject.CompareTag("NextLevelPortal"))
         {
 			StartCoroutine(gameManagerScript.loadNextLevel(3.0f));
-        }
+		}
         if(col.gameObject.tag == "Civilian")
         {
             Debug.Log("Civilian collected");
@@ -152,5 +165,7 @@ public class PlayerController : MonoBehaviour {
         //stop movement
 
     }
+
+    
 
 }

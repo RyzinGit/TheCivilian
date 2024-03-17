@@ -12,6 +12,9 @@ public class BasicVillainAnimController : MonoBehaviour
     }
     public void Attack()
     {
-        animator.SetTrigger("Attack");
+        if (animator != null)
+        {
+            animator.SetTrigger("Attack");
+        }
     }
 }

@@ -30,8 +30,13 @@ public class HeroKnight : MonoBehaviour {
     /// The Civilian
     /// i am using asset animations for my usage
     /// </summary>
+    
     public void HeroAttack()
     {
-        m_animator.SetTrigger("Attack" + Random.Range(1,3));
+        if (m_animator != null)
+        {
+            m_animator.SetTrigger("Attack" + Random.Range(1, 3));
+        }
+
     }
 }
