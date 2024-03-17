@@ -99,7 +99,7 @@ public class GameManagerScript : MonoBehaviour
         //GameOver UI shows 
         playerUIScript.activateDeathMenu();
 
-        Time.timeScale = 0.0f;
+        //Time.timeScale = 0.0f;
         //possibly, player still getting damage after death. death menu may trigger again and again. should we stop time, can we still use menu? ?
 
     }
