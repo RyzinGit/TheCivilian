@@ -13,7 +13,9 @@ public class PlayerController : MonoBehaviour {
     bool disableJump = false;
 	Vector3 localScale;
 
-	void Start () {
+    [SerializeField] GameManagerScript gameManagerScript;
+
+    void Start () {
 		rb = GetComponent<Rigidbody2D> ();
 		anim = GetComponent<Animator> ();
 		localScale = transform.localScale;
@@ -83,10 +85,14 @@ public class PlayerController : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D col)
 	{
-		if (col.gameObject.name.Equals ("Fire")) {
+		//if (col.gameObject.name.Equals ("Projectile")) 
+		if(col.gameObject.CompareTag("Projectile"))
+		{
 			healthPoints -= 1;
 
-            if(healthPoints == 0)
+            gameManagerScript.lowerHealthPoints(); //d
+
+            if (healthPoints == 0)
             {
                 isDead = true;
                 anim.SetTrigger("isDead");
@@ -98,15 +104,16 @@ public class PlayerController : MonoBehaviour {
             }
 		}
 
-        if(col.gameObject.name.Equals("EndLevel"))
+        if(col.gameObject.CompareTag("NextLevelPortal"))
         {
-            Debug.Log("End of level");
+			StartCoroutine(gameManagerScript.loadNextLevel(3.0f));
         }
         if(col.gameObject.tag == "Civilian")
         {
             Debug.Log("Civilian collected");
 			col.gameObject.SetActive(false);
-			//increase score
+            //increase score
+            rescueCivilian();
         }
 	}
 
@@ -130,5 +137,20 @@ public class PlayerController : MonoBehaviour {
         yield return new WaitForSeconds (1.2f);
 		disableJump = false;
 	}
+
+    private void rescueCivilian()
+    {
+        //Animate player
+
+        gameManagerScript.increaseRescuedCivilianCount();
+    }
+
+    public void killPlayer()
+    {
+        //death animation
+
+        //stop movement
+
+    }
 
 }

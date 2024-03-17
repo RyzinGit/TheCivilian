@@ -8,16 +8,16 @@ public class GameManagerScript : MonoBehaviour
     [SerializeField] PlayerUIScript playerUIScript;
     [SerializeField] public float healthPoints;
     [SerializeField] public float rescuedCivCount;
-    [SerializeField] public PlayerScript _player;
+    [SerializeField] public PlayerController _player;
     [SerializeField] private float levelEndCivCount;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        DontDestroyOnLoad(gameObject);
-        healthPoints = 10;
-        levelEndCivCount = 30;
+        //DontDestroyOnLoad(gameObject);
+        healthPoints = 5;
+        levelEndCivCount = 3;
     }
 
    
