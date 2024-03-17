@@ -23,6 +23,8 @@ public class SuperCharsController : MonoBehaviour
     public bool addFightSequenceTree;
     public bool addFightSequenceFour;
 
+    public GameObject bullet;
+
     //ASSETS, assets looks :(
 
 
@@ -54,6 +56,11 @@ public class SuperCharsController : MonoBehaviour
         AttackAnim?.Invoke();
         Debug.Log("FİREE");
         AudioManager.instance.PlaySFXAtPosition("Explosion", hero.transform.position);
+        var bullet = Instantiate(this.bullet, hero.gameObject.transform);
+        bullet.transform.parent = null;
+        bullet.transform.localPosition += offset/2;
+        bullet.GetComponent<ProjectileSpawner>().FireProjectile();
+        
     }
     public void MakeRandomFight()
     {

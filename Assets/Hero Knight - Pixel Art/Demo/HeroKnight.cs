@@ -202,6 +202,5 @@ public class HeroKnight : MonoBehaviour {
     public void HeroAttack()
     {
         m_animator.SetTrigger("Attack" + Random.Range(1,3));
-        Debug.Log(Random.Range(1, 4));
     }
 }
