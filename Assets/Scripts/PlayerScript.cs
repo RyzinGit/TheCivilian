@@ -8,18 +8,6 @@ public class PlayerScript : MonoBehaviour
 
     [SerializeField] GameManagerScript gameManagerScript;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Projectile"))
@@ -29,7 +17,6 @@ public class PlayerScript : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Civilian"))
         {
-            //Debug.Log("i touched a civilian");
             rescueCivilian();
         }
 

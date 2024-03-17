@@ -725,9 +725,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7ad8547cf5678147aaeb9fa69e9c148, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonMainMenu: {fileID: 5037518430561867549}
-  buttonQuit: {fileID: 536993306532302602}
-  buttonRestartLevel: {fileID: 2313540363063385377}
+  buttonMainMenu: {fileID: 0}
+  buttonQuit: {fileID: 0}
+  buttonRestartLevel: {fileID: 0}
 --- !u!223 &2513228983573988174
 Canvas:
   m_ObjectHideFlags: 0

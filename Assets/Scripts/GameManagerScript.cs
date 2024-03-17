@@ -9,7 +9,6 @@ public class GameManagerScript : MonoBehaviour
     [SerializeField] public float healthPoints;
     [SerializeField] public float rescuedCivCount;
     [SerializeField] public PlayerScript _player;
-    [SerializeField] public AudioManager _audioManager;
     [SerializeField] private float levelEndCivCount;
 
 

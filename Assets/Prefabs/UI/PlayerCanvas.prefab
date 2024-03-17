@@ -1151,11 +1151,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc27c5181476d814e99d86ea9d90c318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonSound: {fileID: 296160020228707544}
-  buttonMainMenu: {fileID: 5523540147383839046}
-  buttonDash: {fileID: 6001839860605706029}
-  buttonHeal: {fileID: 6024788804762732189}
-  buttonJump: {fileID: 7076981152621727163}
+  buttonSound: {fileID: 0}
+  buttonMainMenu: {fileID: 0}
+  buttonDash: {fileID: 0}
+  buttonHeal: {fileID: 0}
+  buttonJump: {fileID: 0}
   _mainMenuScript: {fileID: 0}
   _deathMenuScript: {fileID: 0}
   _audioManager: {fileID: 0}
