@@ -20,6 +20,8 @@ public class MainMenuScript : MonoBehaviour
 
         //inGame = false;
 
+        checkIngameResumeButton();
+
         buttonStart.onClick.AddListener(() => buttonStartClicked());
         buttonQuit.onClick.AddListener(() => buttonQuitClicked());
         buttonResume.onClick.AddListener(() => buttonResumeClicked());
@@ -34,7 +36,7 @@ public class MainMenuScript : MonoBehaviour
 
     private void buttonStartClicked()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1); //0 main menu, 1 level1
     }
     private void buttonResumeClicked()
     {
@@ -42,16 +44,24 @@ public class MainMenuScript : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void checkIngameResumeButton()
     {
         if (inGame == true)
         {
             buttonResume.enabled = true;
+            buttonResume.gameObject.SetActive(true);
         }
         else
         {
             buttonResume.enabled = false;
+            buttonResume.gameObject.SetActive(false);
         }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+       
+
     }
 }

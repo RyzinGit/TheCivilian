@@ -8,8 +8,8 @@ using UnityEngine.UI;
 public class PlayerUIScript : MonoBehaviour
 {
     // Start is called before the first frame update
-    private TextMeshProUGUI _healthCountTMP;
-    private TextMeshProUGUI _rescuedCivilianCountTMP;
+    [SerializeField] private TextMeshProUGUI _healthCountTMP;
+    [SerializeField] private TextMeshProUGUI _rescuedCivilianCountTMP;
 
     //option buttons
     public Button buttonSound;
@@ -21,16 +21,12 @@ public class PlayerUIScript : MonoBehaviour
     public Button buttonJump;
 
     [SerializeField] MainMenuScript _mainMenuScript;
-
-    [SerializeField] AudioManager _audioManager;
+    [SerializeField] DeathMenuScript _deathMenuScript;
 
     bool isSoundActive;
 
     void Start()
     { 
-        _healthCountTMP = GameObject.Find("healthCountTMP").GetComponent<TextMeshProUGUI>();
-        _rescuedCivilianCountTMP = GameObject.Find("rescuedCivCountTMP").GetComponent<TextMeshProUGUI>();
-
         buttonSound.onClick.AddListener(() => audioButtonClicked());
         buttonMainMenu.onClick.AddListener(() => mainMenuButtonClicked());
 
@@ -38,22 +34,9 @@ public class PlayerUIScript : MonoBehaviour
         buttonHeal.onClick.AddListener(() => buttonHealClicked());
         buttonJump.onClick.AddListener(() => buttonJumpClicked());
 
-        //_mainMenuScript = GameObject.Find("MainMenuCanvas").GetComponent<MainMenuScript>();
-
-        //_audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
-
-        //if(_audioManager = GameObject.Find("AudioManagerTest").GetComponent<AudioManager>())
-        //{
-        //    Debug.Log("bulundu " + _audioManager);
-        //}
+        
     }
 
-
-    // Update is called once per frame
-    void Update()
-    {
-        //updateHealthUIBox(1);
-    }
 
     public void updateHealthUIText(float num)
     {
@@ -66,23 +49,8 @@ public class PlayerUIScript : MonoBehaviour
 
     private void audioButtonClicked()
     {
-        Debug.Log("audio button clicked");
-
-        //This may cause crash in build game?
-        //isSoundActive = _audioManager.gameObject.activeSelf;
-        //if (isSoundActive)
-        //{
-        //    _audioManager.gameObject.SetActive(!isSoundActive);
-        //}
-        //else
-        //{
-        //    _audioManager.gameObject.SetActive(!isSoundActive);
-        //    _audioManager.StartMusicAfterSecs(0);
-        //}
-
-        _audioManager.musicSource.mute = !_audioManager.musicSource.mute;
-        _audioManager.sfxSource.mute = !_audioManager.sfxSource.mute;
-
+        AudioManager.instance.musicSource.mute = !AudioManager.instance.musicSource.mute;
+        AudioManager.instance.sfxSource.mute = !AudioManager.instance.sfxSource.mute;
     }
 
     private void mainMenuButtonClicked()
@@ -108,7 +76,10 @@ public class PlayerUIScript : MonoBehaviour
         Debug.Log("i can jump higher");
     }
 
-
+    public void activateDeathMenu()
+    {
+        _deathMenuScript.gameObject.SetActive(true);
+    }
 
 
 }
