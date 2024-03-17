@@ -10,15 +10,13 @@ public class ProjectileSpawner : MonoBehaviour
     public GameObject effect;
 
 
-    private void Awake()
-    {
 
-        //effect      
-    }
     public void FireProjectile()
     {
+        
         if (projectileDirections[projectileDirectionPatternIndex] != null)
         {
+            Instantiate(effect, gameObject.transform).GetComponent<ParticleSystem>().Play();
             foreach (var direction in projectileDirections[projectileDirectionPatternIndex].directions)
             {
                 Projectile var = Instantiate(projectile,gameObject.transform).GetComponent<Projectile>();
@@ -27,7 +25,8 @@ public class ProjectileSpawner : MonoBehaviour
                 var.MoveToDirection(direction);
             }
             //pool if you have time
-            Destroy(gameObject);
+            //wait for effect
+            Destroy(gameObject,1f);
         }
     }
 }

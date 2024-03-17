@@ -24,7 +24,7 @@ public class SuperCharsController : MonoBehaviour
     public bool addFightSequenceFour;
 
     public GameObject bullet;
-
+    
     //ASSETS, assets looks :(
 
 
