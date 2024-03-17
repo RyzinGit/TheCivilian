@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4907140115912686003}
   - component: {fileID: 7102268719863038366}
   m_Layer: 0
-  m_Name: insan
+  m_Name: InjuredCivilian
   m_TagString: Civilian
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

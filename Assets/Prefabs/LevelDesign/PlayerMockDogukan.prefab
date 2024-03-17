@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8175254552080832393}
   - component: {fileID: 3485870114042242248}
   m_Layer: 0
-  m_Name: oyuncu
+  m_Name: PlayerMockDogukan
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
