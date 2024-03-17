@@ -24,7 +24,9 @@ public class SuperCharsController : MonoBehaviour
     public bool addFightSequenceFour;
 
     public GameObject bullet;
-    
+
+    public GameObject player;
+    public Vector3 posOffset;
     //ASSETS, assets looks :(
 
 
@@ -32,6 +34,7 @@ public class SuperCharsController : MonoBehaviour
     public static event Action AttackAnim;
     private void Awake()
     {
+        player = FindAnyObjectByType<PlayerController>().gameObject;
 
         heroLocalPosition = hero.transform.localPosition;
         villainLocalPosition = villain.transform.localPosition;
@@ -47,6 +50,11 @@ public class SuperCharsController : MonoBehaviour
             fightSequences.Add(HeroFightSequenceFourth);
         //test
         MakeRandomFight();
+    }
+    private void Update()
+    {
+         Vector3 playerPos= player.transform.position;
+        transform.position = playerPos - posOffset;
     }
 
     //Instantiate projectile and spread

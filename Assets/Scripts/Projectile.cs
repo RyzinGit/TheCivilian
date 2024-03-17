@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -17,11 +17,14 @@ public class Projectile : MonoBehaviour
     {
         rb.AddForce(direction);
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        //if you wanna the projectiles pass through the ground
-        //you can put an if here
-        Explotion();
+        if(collision.CompareTag("Player"))
+        {
+            Explotion();
+        }
+            
     }
     public void Explotion()
     {

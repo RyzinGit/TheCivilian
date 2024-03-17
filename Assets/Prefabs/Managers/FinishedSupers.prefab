@@ -50,7 +50,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1817237219890082686, guid: 9046fbcd646238342af121e03fc44e82, type: 3}
       propertyPath: m_Name
-      value: Supers 1
+      value: FinishedSupers
       objectReference: {fileID: 0}
     - target: {fileID: 3290410239949526368, guid: 9046fbcd646238342af121e03fc44e82, type: 3}
       propertyPath: m_IsActive
@@ -80,6 +80,14 @@ PrefabInstance:
       propertyPath: bullet
       value: 
       objectReference: {fileID: 1881386443610290926, guid: c349e4f8ad746904cac028ee5259d4fb, type: 3}
+    - target: {fileID: 7683427151585078048, guid: 9046fbcd646238342af121e03fc44e82, type: 3}
+      propertyPath: posOffset.x
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7683427151585078048, guid: 9046fbcd646238342af121e03fc44e82, type: 3}
+      propertyPath: posOffset.y
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 7683427151585078048, guid: 9046fbcd646238342af121e03fc44e82, type: 3}
       propertyPath: addFightSequenceOne
       value: 1
@@ -145,6 +153,10 @@ PrefabInstance:
     - target: {fileID: 5768767485729870557, guid: 47cbd85a2ed608343b5ecda6d14a77b8, type: 3}
       propertyPath: m_Name
       value: HeroKnight
+      objectReference: {fileID: 0}
+    - target: {fileID: 5768767485729870557, guid: 47cbd85a2ed608343b5ecda6d14a77b8, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8290641452586475146, guid: 47cbd85a2ed608343b5ecda6d14a77b8, type: 3}
       propertyPath: m_LocalPosition.x
