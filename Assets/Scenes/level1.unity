@@ -3348,6 +3348,10 @@ PrefabInstance:
       propertyPath: _rescuedCivilianCountTMP
       value: 
       objectReference: {fileID: 2146764363}
+    - target: {fileID: 3218041862600871638, guid: 5978e6d00fe2cea47973a4427838ad89, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4235822757663931848, guid: 5978e6d00fe2cea47973a4427838ad89, type: 3}
       propertyPath: m_Pivot.x
       value: 0
