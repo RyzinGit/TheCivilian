@@ -47,12 +47,13 @@ public class AudioManager : MonoBehaviour
     }
     public void PlaySFXAtPosition(string name, Vector3 position)
     {
+        if (sfxSource.mute)
+            return;
         foreach (var audio in sfxAudios)
         {
             if (audio.name == name)
             {   
                 AudioSource.PlayClipAtPoint(audio.clip, position);
-                //this messes with muting option as muting only effects source but this creates a new independent audio clip object -d
                 return;
             }
         }
