@@ -150,6 +150,18 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3401280928205891938, guid: 47cbd85a2ed608343b5ecda6d14a77b8, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3401280928205891938, guid: 47cbd85a2ed608343b5ecda6d14a77b8, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3401280928205891938, guid: 47cbd85a2ed608343b5ecda6d14a77b8, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -776962473
+      objectReference: {fileID: 0}
     - target: {fileID: 5768767485729870557, guid: 47cbd85a2ed608343b5ecda6d14a77b8, type: 3}
       propertyPath: m_Name
       value: HeroKnight
@@ -220,6 +232,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4970388179501009893}
     m_Modifications:
+    - target: {fileID: 1729749104253414162, guid: 134376180d29e734ca79381d1d585082, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729749104253414162, guid: 134376180d29e734ca79381d1d585082, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729749104253414162, guid: 134376180d29e734ca79381d1d585082, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -776962473
+      objectReference: {fileID: 0}
     - target: {fileID: 2911169354255239844, guid: 134376180d29e734ca79381d1d585082, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.009999275
