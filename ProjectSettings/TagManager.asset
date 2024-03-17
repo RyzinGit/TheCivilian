@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Civilian
   - NextLevelPortal
+  - Ground
   layers:
   - Default
   - TransparentFX
