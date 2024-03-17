@@ -259,6 +259,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
+    - target: {fileID: 3698480336791822545, guid: e4ca5c2f8b6e336489470d2ac1a6a26b, type: 3}
+      propertyPath: m_Volume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3726870122625868219, guid: e4ca5c2f8b6e336489470d2ac1a6a26b, type: 3}
+      propertyPath: sfxAudios.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3726870122625868219, guid: e4ca5c2f8b6e336489470d2ac1a6a26b, type: 3}
+      propertyPath: sfxAudios.Array.data[2].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: e19f3669ef3fe464fa822dc7ce6f93f4, type: 3}
+    - target: {fileID: 3726870122625868219, guid: e4ca5c2f8b6e336489470d2ac1a6a26b, type: 3}
+      propertyPath: sfxAudios.Array.data[2].name
+      value: Death
+      objectReference: {fileID: 0}
     - target: {fileID: 7441248840868757639, guid: e4ca5c2f8b6e336489470d2ac1a6a26b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

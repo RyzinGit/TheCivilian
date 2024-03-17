@@ -128,6 +128,10 @@ public class PlayerController : MonoBehaviour {
             //increase score
             rescueCivilian();
         }
+		if(col.gameObject.tag =="TheBottom")
+		{
+			gameManagerScript.healthPoints = 0;
+		}
 	}
 
 	IEnumerator Hurt()

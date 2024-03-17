@@ -7,6 +7,9 @@ TagManager:
   - Civilian
   - NextLevelPortal
   - Projectile
+  - Bullet
+  - Ground
+  - TheBottom
   layers:
   - Default
   - TransparentFX
