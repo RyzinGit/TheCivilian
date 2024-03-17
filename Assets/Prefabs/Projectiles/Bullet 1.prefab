@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8662538274423325258}
   - component: {fileID: -6440497556033370461}
   m_Layer: 0
-  m_Name: Bullet
+  m_Name: Bullet 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49,6 +49,8 @@ MonoBehaviour:
     - {x: 0, y: -1, z: 0}
     - {x: -1, y: -1, z: 0}
     - {x: 1, y: -1, z: 0}
+    - {x: 2, y: -1, z: 0}
+    - {x: -2, y: -1, z: 0}
   projectileDirectionPatternIndex: 0
-  projectile: {fileID: 772136811498410849, guid: 7d71bac2482e9f846903950797f3ea7d, type: 3}
+  projectile: {fileID: 772136811498410849, guid: 2bacb59f9916d2947b8409b75b9ba741, type: 3}
   effect: {fileID: 0}
