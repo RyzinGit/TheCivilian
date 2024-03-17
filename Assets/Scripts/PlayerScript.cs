@@ -20,34 +20,38 @@ public class PlayerScript : MonoBehaviour
         
     }
 
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-    ////    Debug.Log("i touched smth");
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Projectile"))
+        {
+            gameManagerScript.lowerHealthPoints();
+        }
 
-    //    if (collision.gameObject.CompareTag("Civilian"))
-    //    {
-    //        Debug.Log("i touched a civilian");
-    //        rescueCivilian();
-    //    }
-    //}
+        if (collision.gameObject.CompareTag("Civilian"))
+        {
+            //Debug.Log("i touched a civilian");
+            rescueCivilian();
+        }
+
+        if (collision.gameObject.CompareTag("NextLevelPortal"))
+        {
+            StartCoroutine(gameManagerScript.loadNextLevel(3.0f));
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //Debug.Log("i touched smth");
-        Debug.Log(collision.gameObject);
-
-        if(collision.CompareTag("Bullet"))
+        if (collision.CompareTag("Projectile"))
         {
             gameManagerScript.lowerHealthPoints();
         }
 
         if (collision.CompareTag("Civilian"))
         {
-            //Debug.Log("i touched a civilian");
             rescueCivilian();
         }
 
-        if(collision.CompareTag("NextLevelPortal"))
+        if (collision.CompareTag("NextLevelPortal"))
         {
             StartCoroutine(gameManagerScript.loadNextLevel(3.0f));
         }
@@ -56,8 +60,6 @@ public class PlayerScript : MonoBehaviour
 
     private void rescueCivilian()
     {
-        //Debug.Log("i rescued a civilian");
-
         //Animate player
 
         gameManagerScript.increaseRescuedCivilianCount();
