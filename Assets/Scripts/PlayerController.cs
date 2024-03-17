@@ -105,7 +105,7 @@ public class PlayerController : MonoBehaviour {
         if(col.gameObject.tag == "Civilian")
         {
             Debug.Log("Civilian collected");
-			//fade out civilian's sprite
+			col.gameObject.SetActive(false);
 			//increase score
         }
 	}
