@@ -50,5 +50,5 @@ MonoBehaviour:
     - {x: -1, y: -1, z: 0}
     - {x: 1, y: -1, z: 0}
   projectileDirectionPatternIndex: 0
-  projectile: {fileID: 772136811498410849, guid: 7d71bac2482e9f846903950797f3ea7d, type: 3}
+  projectile: {fileID: 4750531411376267085, guid: f84ebddd2fe75ab489b2d50eca958a8e, type: 3}
   effect: {fileID: 0}

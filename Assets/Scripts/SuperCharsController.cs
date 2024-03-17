@@ -54,7 +54,6 @@ public class SuperCharsController : MonoBehaviour
     {
         
         AttackAnim?.Invoke();
-        Debug.Log("FİREE");
         AudioManager.instance.PlaySFXAtPosition("Explosion", hero.transform.position);
         var bullet = Instantiate(this.bullet, hero.gameObject.transform);
         bullet.transform.parent = null;
@@ -125,7 +124,7 @@ public class SuperCharsController : MonoBehaviour
                 .setOnComplete(() => { EndFight(); MakeRandomFight(); });
             });
     }
-    //3rd...
+    //3rd
     public void HeroFightSequenceThird()
     {
         isFighting = true;
@@ -141,6 +140,7 @@ public class SuperCharsController : MonoBehaviour
             });
 
     }
+    //4th
     public void HeroFightSequenceFourth()
     {
         isFighting = true;
