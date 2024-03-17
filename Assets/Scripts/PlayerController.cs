@@ -101,20 +101,20 @@ public class PlayerController : MonoBehaviour {
 		//if (col.gameObject.name.Equals ("Projectile")) 
 		if(col.gameObject.CompareTag("Projectile"))
 		{
-			healthPoints -= 1;
+			//healthPoints -= 1;
 
             gameManagerScript.lowerHealthPoints(); //d
 
-            if (healthPoints == 0)
-            {
-                isDead = true;
-                anim.SetTrigger("isDead");
-            }
-            else
-            {
-                anim.SetTrigger("isTakenHit");
-                StartCoroutine("Hurt");
-            }
+            //if (healthPoints == 0)
+            //{
+            //    isDead = true;
+            //    anim.SetTrigger("isDead");
+            //}
+            //else
+            //{
+            //    anim.SetTrigger("isTakenHit");
+            //    StartCoroutine("Hurt");
+            //}
 		}
 
         if(col.gameObject.CompareTag("NextLevelPortal"))
