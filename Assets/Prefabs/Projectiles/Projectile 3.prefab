@@ -4845,7 +4845,7 @@ GameObject:
   - component: {fileID: 5759350439731962097}
   m_Layer: 0
   m_Name: Projectile 3
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4994,4 +4994,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   power: 3
   liteTime: 5
-  projectileExplotion: {fileID: 0}
+  projectileExplotion: {fileID: 1750386962848527324, guid: b957b81c59c744f44b9cb42cb5797fa5, type: 3}

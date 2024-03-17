@@ -19,15 +19,22 @@ public class Projectile : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        //if you wanna the projectiles pass through the ground
+        //you can put an if here
         Explotion();
     }
     public void Explotion()
     {
-        //make projectile explosion effect
+        ParticleSystem effect = Instantiate(projectileExplotion, gameObject.transform).GetComponent<ParticleSystem>();
+        effect.Play();
+        //to avoid rotation of projectiles after hit
+        effect.gameObject.transform.parent = null;
+        //explosion effect time is 0.5 sec
         Destroy(gameObject);
     }
     public void Explosion(float time)
     {
+        //no need to show effect if projectile out of camera (probably)
         Destroy(gameObject, liteTime);
     }
 }
