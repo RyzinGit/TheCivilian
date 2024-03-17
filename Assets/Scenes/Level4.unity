@@ -4504,6 +4504,7 @@ GameObject:
   - component: {fileID: 5510021833168865720}
   - component: {fileID: 4845654678221726549}
   - component: {fileID: 60041399145917159}
+  - component: {fileID: 5510021833168865721}
   m_Layer: 0
   m_Name: ForeGround
   m_TagString: Untagged
@@ -12247,6 +12248,42 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8065053019872001208}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!19719996 &5510021833168865721
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769722964551527972}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0
+  m_UseDelaunayMesh: 0
 --- !u!4 &5529728352760485889
 Transform:
   m_ObjectHideFlags: 0
@@ -20725,7 +20762,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 22
-      m_TileSpriteIndex: 19
+      m_TileSpriteIndex: 20
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -20765,7 +20802,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 12
-      m_TileSpriteIndex: 17
+      m_TileSpriteIndex: 19
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -20815,7 +20852,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 10
-      m_TileSpriteIndex: 14
+      m_TileSpriteIndex: 17
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -21926,20 +21963,20 @@ Tilemap:
     m_Data: {fileID: -1058189580, guid: be0cad4a1f4324e24b2d5ea94784e5c6, type: 3}
   - m_RefCount: 5
     m_Data: {fileID: 572076995, guid: be0cad4a1f4324e24b2d5ea94784e5c6, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -418132603, guid: be0cad4a1f4324e24b2d5ea94784e5c6, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 3
     m_Data: {fileID: -1002082580, guid: be0cad4a1f4324e24b2d5ea94784e5c6, type: 3}
   - m_RefCount: 3
     m_Data: {fileID: 1374069567, guid: be0cad4a1f4324e24b2d5ea94784e5c6, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 164437505, guid: be0cad4a1f4324e24b2d5ea94784e5c6, type: 3}
+    m_Data: {fileID: -418132603, guid: be0cad4a1f4324e24b2d5ea94784e5c6, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 1665530991, guid: be0cad4a1f4324e24b2d5ea94784e5c6, type: 3}
   - m_RefCount: 1
+    m_Data: {fileID: 164437505, guid: be0cad4a1f4324e24b2d5ea94784e5c6, type: 3}
+  - m_RefCount: 1
     m_Data: {fileID: -1433163165, guid: be0cad4a1f4324e24b2d5ea94784e5c6, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   - m_RefCount: 3
     m_Data: {fileID: -1092675096, guid: be0cad4a1f4324e24b2d5ea94784e5c6, type: 3}
   - m_RefCount: 11
