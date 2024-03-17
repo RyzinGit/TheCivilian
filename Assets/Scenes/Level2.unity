@@ -921,7 +921,7 @@ PrefabInstance:
       objectReference: {fileID: 612422740}
     - target: {fileID: 3925110008786429239, guid: bec534723131c314181be9687b2b147f, type: 3}
       propertyPath: healthPoints
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3925110008786429239, guid: bec534723131c314181be9687b2b147f, type: 3}
       propertyPath: playerUIScript
@@ -929,11 +929,11 @@ PrefabInstance:
       objectReference: {fileID: 25664841}
     - target: {fileID: 3925110008786429239, guid: bec534723131c314181be9687b2b147f, type: 3}
       propertyPath: rescuedCivCount
-      value: 99
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3925110008786429239, guid: bec534723131c314181be9687b2b147f, type: 3}
       propertyPath: levelEndCivCount
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7428266140070316234, guid: bec534723131c314181be9687b2b147f, type: 3}
       propertyPath: m_LocalPosition.x

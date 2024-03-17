@@ -9,9 +9,9 @@ public class AudioTest : MonoBehaviour
     {
         //AudioManager.instance.PlaySFX("CheckPoint");
         //AudioManager.instance.sfxSource.mute = true;
-        AudioManager.instance.StartMusicAfterSecs(3);
-        AudioManager.instance.PlaySFXAtPosition("Explosion", new Vector3(12,6,0));
-        StartCoroutine(InTimeTestCor(5));
+        AudioManager.instance.StartMusicAfterSecs(1);
+        //AudioManager.instance.PlaySFXAtPosition("Explosion", new Vector3(12,6,0));
+        //StartCoroutine(InTimeTestCor(5));
     }
     private IEnumerator InTimeTestCor(float time)
     {
