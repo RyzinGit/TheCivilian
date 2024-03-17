@@ -30,6 +30,7 @@ public class Projectile : MonoBehaviour
         //to avoid rotation of projectiles after hit
         effect.gameObject.transform.parent = null;
         //explosion effect time is 0.5 sec
+        Destroy(effect.gameObject,0.5f);
         Destroy(gameObject);
     }
     public void Explosion(float time)
